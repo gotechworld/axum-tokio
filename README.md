@@ -13,7 +13,7 @@ A minimal Rust web server built with [Axum](https://github.com/tokio-rs/axum) an
 - **Axum** for routing and HTTP server integration
 - **Tokio** for the async runtime and TCP listener
 - **Docker** for containerized builds and runtime packaging
-- **GitHub Actions** for CI checks such as formatting, linting, build, tests, dependency review, and CodeQL scanning
+- **GitHub Actions** for CI checks such as formatting, linting, build, tests, and CodeQL scanning
 
 ## Requirements
 
