@@ -50,7 +50,7 @@ src/
 
 The application is intentionally small and currently lives in a single source file:
 
-- `/home/runner/work/axum-tokio/axum-tokio/src/main.rs` is the entrypoint and contains the whole app
+- `src/main.rs` is the entrypoint and contains the whole app
 - `index_handler()` handles `GET /` and returns `200 OK`
 - `main()` creates the Axum router, binds a Tokio `TcpListener` to `0.0.0.0:3000`, and starts serving requests
 
@@ -63,10 +63,10 @@ The application is intentionally small and currently lives in a single source fi
 
 ## Repository layout details
 
-- `/home/runner/work/axum-tokio/axum-tokio/Cargo.toml` defines the package metadata and dependencies
-- `/home/runner/work/axum-tokio/axum-tokio/src/main.rs` contains the server code
-- `/home/runner/work/axum-tokio/axum-tokio/Dockerfile` builds a release binary in a Rust image and copies it into a small Alpine runtime image
-- `/home/runner/work/axum-tokio/axum-tokio/.github/workflows/ci.yml` defines the CI pipeline used by GitHub Actions
+- `Cargo.toml` defines the package metadata and dependencies
+- `src/main.rs` contains the server code
+- `Dockerfile` builds a release binary in a Rust image and copies it into a small Alpine runtime image
+- `.github/workflows/ci.yml` defines the CI pipeline used by GitHub Actions
 
 ## Current architecture
 
